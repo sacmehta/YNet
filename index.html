@@ -43,7 +43,7 @@ function buttonSwitch(id, text)
 <p align="center">
 <table style="width:960px" align="center">
 <tr>
-	<td><img width=960px alt="" src="webfigures/overview.png"></td>	
+	<td><img width=960px alt="" src="webfigures/overview.jpg"></td>	
 </tr>
 <tr>
 	<td><p align="justify"><b>Figure:</b> Overview of our method for detecting breast cancer. Our system is given an ROI from a breast biopsy WSI and breaks it into instances that are fed into Y-Net. Y-Net produces two different outputs: an instance-level segmentation mask and an instance-level probability map. The instance-level segmentation masks have, for each instance, the predicted labels of the eight different tissue types. These are combined to produce a segmentation mask for the whole ROI. The instance-level probability map contains (for every pixel) the maximum value of the probability of that instance being in one of the four diagnostic categories. This map is thresholded to binary and combined with the segmentation mask to produce the discriminative segmentation mask. A multi-layer perceptron then uses the frequency and co-occurrence features extracted from the final mask to predict the cancer diagnosis.</p></td>

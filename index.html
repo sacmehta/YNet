@@ -24,7 +24,7 @@ function buttonSwitch(id, text)
 <img src="webfigures/top_arrow.jpg" style="border: 0pt none ; width: 26px; height: 32px;"/></a>
 </div>
 
-<h2 id="title" class="auto-style1">Learning to Segment Breast Biopsy Whole Slide Images</h2>
+<h2 id="title" class="auto-style1">Y-Net: Joint Segmentation and Classification for Diagnosis of Breast Biopsy Images</h2>
 
 <p class="auto-style7"  align="center">
 	<a href="https://sachinmehtangb.wixsite.com/sachinmehta" target="_blank">Sachin Mehta</a><sup>*,1</sup>, <a href="" target="_blank">Ezgi Mercan</a><sup>*,1</sup>, 
@@ -43,15 +43,15 @@ function buttonSwitch(id, text)
 <p align="center">
 <table style="width:960px" align="center">
 <tr>
-	<td><img width=960px alt="" src="webfigures/BlockDiagram.png"></td>	
+	<td><img width=960px alt="" src="webfigures/overview.png"></td>	
 </tr>
 <tr>
-	<td><p align="justify"><b>Figure:</b> CNN architecture for segmenting whole slide breast biopsy images. Our CNN architecture incorporates following: (1) input-aware residual convolutional units, (2) dense connections between encoding and decoding blocks, (3) multiple decoders, and (4) multi-resolution input. See paper for more details.</p></td>
+	<td><p align="justify"><b>Figure:</b> Overview of our method for detecting breast cancer. Our system is given an ROI from a breast biopsy WSI and breaks it into instances that are fed into Y-Net. Y-Net produces two different outputs: an instance-level segmentation mask and an instance-level probability map. The instance-level segmentation masks have, for each instance, the predicted labels of the eight different tissue types. These are combined to produce a segmentation mask for the whole ROI. The instance-level probability map contains (for every pixel) the maximum value of the probability of that instance being in one of the four diagnostic categories. This map is thresholded to binary and combined with the segmentation mask to produce the discriminative segmentation mask. A multi-layer perceptron then uses the frequency and co-occurrence features extracted from the final mask to predict the cancer diagnosis.</p></td>
 </tr>
 </table>
 
 <p class="style2"><strong><span class="auto-style6">Abstract</span></strong></p>
-<p class="auto-style5">We trained and applied an encoder-decoder model to semantically segment breast biopsy images into biologically meaningful tissue labels. Since conventional encoder-decoder networks cannot be applied directly on large biopsy images and the different sized structures in biopsies present novel challenges, we propose four modifications: (1) an input-aware encoding block to compensate for information loss, (2) a new dense connection pattern between encoder and decoder, (3) dense and sparse decoders to combine multi-level features, (4) a multi-resolution network that fuses the results of encoder-decoders run on different resolutions. Our model outperforms a feature-based approach and conventional encoder-decoders from the literature. We use semantic segmentations produced with our model in an automated diagnosis task and obtain higher accuracies than a baseline approach that employs an SVM for feature-based segmentation, both using the same segmentation-based diagnostic features.
+<p class="auto-style5">In this paper, we introduce a conceptually simple network for generating discriminative tissue-level segmentation masks for the purpose of breast cancer diagnosis. Our method efficiently segments different types of tissues in breast biopsy images while simultaneously predicting a discriminative map for identifying important areas in an image. Our network, Y-Net, extends and generalizes U-Net by adding a parallel branch for discriminative map generation and by supporting convolutional block modularity, which allows the user to adjust network efficiency without altering the network topology. Y-Net delivers state-of-the-art segmentation accuracy while learning 6.6x fewer parameters than its closest competitors. The addition of descriptive power from Y-Net's discriminative segmentation masks improve diagnostic classification accuracy by 7% over state-of-the-art methods for diagnostic classification.
 </p>
 
 <p class="auto-style5">&nbsp;</p>
@@ -67,10 +67,10 @@ function buttonSwitch(id, text)
 	<br>
 	Sachin Mehta<sup>*</sup>, Ezgi Mercan<sup>*</sup>, Jamen Bartlett, Donald Weaver, Joann Elmore, and Linda Shapiro
 	<br>
-	<em>IEEE Winter Conference on Applications of Computer Vision (WACV'18)</em> 
+	<em>21st International Conference On Medical Image Computing & Computer Assisted Intervention (MICCAI'18)</em> 
 	<br>
-	<img alt="" height="32" src="webfigures/pdf.jpg" width="31">&nbsp;&nbsp;[<a target="_blank" href="https://arxiv.org/pdf/1709.02554.pdf">Paper</a>]<br><br>
-	<img alt="" height="32" src="webfigures/github.jpg" width="31">&nbsp;&nbsp;[<a target="_blank" href="https://github.com/sacmehta/WSISegmentation">Source Code</a>]<br><br>
+	<img alt="" height="32" src="webfigures/pdf.jpg" width="31">&nbsp;&nbsp;[<a target="_blank" href="">Paper</a>]<br><br>
+	<img alt="" height="32" src="webfigures/github.jpg" width="31">&nbsp;&nbsp;[<a target="_blank" href="https://github.com/sacmehta/YNet">Source Code</a>]<br><br>
 	</td>
 	</tr>
 </table>
@@ -80,10 +80,11 @@ function buttonSwitch(id, text)
 <p id="performance", class="auto-style4"><strong>Results</strong></p>
 <table style="width:960px" align="center">
 <tr>
-	<td><img width=800px alt="" src="webfigures/results.png"></td>
+	<td><img width=800px alt="" src="webfigures/resultsSeg.png"></td>
+	<td><img width=800px alt="" src="webfigures/resultsClass.png"></td>
 </tr>
 <tr>
-	<td><p class="auto-style5"><b>Figure:</b> Quantitative comparison of different methods on the Breast Biopsy dataset.</p></td>
+	<td colspan=2><p class="auto-style5"><b>Figure:</b> Quantitative comparison of different methods on the Breast Biopsy dataset.</p></td>
 </tr>
 </table>
 

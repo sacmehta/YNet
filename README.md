@@ -3,10 +3,10 @@ This repository contains the source code for our paper, YNet, which is accepted 
 
 ## Sample output of Y-Net
 
-Y-Net  identified correctly classified tissues that were not important for diagnosis. For example, stroma was identified as an important tissue, but blood was not. Stroma is an important tissue label for diagnosing breast cancer [ref1] and removing information about stroma decreased the diagnostic classification accuracy by about  4\%. See paper for more details.
-```
-[ref1] Beck, Andrew H., et al. "Systematic analysis of breast cancer morphology uncovers stromal features associated with survival." Science translational medicine 3.108 (2011): 108ra113-108ra113.
-```
+Y-Net  identified correctly classified tissues that were not important for diagnosis. For example, stroma was identified as an important tissue, but blood was not. Stroma is an important tissue label for diagnosing breast cancer [1] and removing information about stroma decreased the diagnostic classification accuracy by about  4\%. See paper for more details.
+
+[1] Beck, Andrew H., et al. "Systematic analysis of breast cancer morphology uncovers stromal features associated with survival." Science translational medicine 3.108 (2011): 108ra113-108ra113.
+
 
 ![Results](/images/results.png)
 

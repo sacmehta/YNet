@@ -4,7 +4,7 @@ This repository contains the source code of jointly training the Y-Net for segme
 
 ## Structure of this repository
 This repository is organized as:
-* [pretrained_models_st2](/pretrained_models_st2/) This directory contains the pre-trained models. We only provide the models for Y-Net with ESP as encoding blocks and PSP as decoding blocks.
+* [pretrained_models_st2](/stage2/pretrained_models_st2/) This directory contains the pre-trained models. We only provide the models for Y-Net with ESP as encoding blocks and PSP as decoding blocks.
 * Python files - These files contain the source code that we used to train the data
 
 ## Getting Started

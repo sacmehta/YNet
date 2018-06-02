@@ -26,3 +26,6 @@ If ESPNet is useful for your research, then please cite our paper.
   year={2018}
 }
 ```
+
+## License
+This code is released under the same license terms as [ESPNet](https://github.com/sacmehta/ESPNet).

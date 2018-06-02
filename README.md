@@ -1,6 +1,8 @@
 # Y-Net: Joint Segmentation and Classification for Diagnosis of Breast Biopsy Images
 This repository contains the source code for our paper, YNet, which is accepted for publication at [MICCAI'18](https://www.miccai2018.org/en/) paper
 
+![Results](/images/results.gif)
+
 ## Structure of this repository
 YNet is trained in two stages:
 * [stage1](/stage1/) This directory contains the source code for training the stage 1 in Y-Net. Stage 1 is nothing but a segmentation brach.

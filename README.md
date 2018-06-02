@@ -30,7 +30,7 @@ We recommend to use [Anaconda](https://conda.io/docs/user-guide/install/linux.ht
 
 
 ## Citation
-If ESPNet is useful for your research, then please cite our paper.
+If Y-Net is useful for your research, then please cite our paper.
 ```
 @inproceedings{mehta2018ynet,
   title={{Y-Net: Joint Segmentation and Classification for Diagnosis of Breast Biopsy Images}},
@@ -38,6 +38,13 @@ If ESPNet is useful for your research, then please cite our paper.
   booktitle={International Conference on Medical image computing and computer-assisted intervention},
   year={2018},
   organization={Springer}
+}
+
+@article{mehta2018espnet,
+  title={ESPNet: Efficient Spatial Pyramid of Dilated Convolutions for Semantic Segmentation},
+  author={Sachin Mehta, Mohammad Rastegari, Anat Caspi, Linda Shapiro, and Hannaneh Hajishirzi},
+  journal={arXiv preprint arXiv:1803.06815},
+  year={2018}
 }
 ```
 

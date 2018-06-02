@@ -20,11 +20,12 @@ We recommend to use [Anaconda](https://conda.io/docs/user-guide/install/linux.ht
 ## Citation
 If ESPNet is useful for your research, then please cite our paper.
 ```
-@article{mehta2018ynet,
-  title={Y-Net: Joint Segmentation and Classification for Diagnosis of Breast Biopsy Images},
-  author={Sachin Mehta, Ezgi Mercan, Jamen Bartlett, Donald Weaver, Joann  Elmore and Linda Shapiro},
-  journal={21st International Conference on Medical Image Computing and Computer Assisted Intervention (MICCAI)},
-  year={2018}
+@inproceedings{mehta2018ynet,
+  title={{Y-Net: Joint Segmentation and Classification for Diagnosis of Breast Biopsy Images}},
+  author={Sachin Mehta and Ezgi Mercan and Jamen Bartlett and Donald Weaver and Joann  Elmore and Linda Shapiro},
+  booktitle={International Conference on Medical image computing and computer-assisted intervention},
+  year={2018},
+  organization={Springer}
 }
 ```
 

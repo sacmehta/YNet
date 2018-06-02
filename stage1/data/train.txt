@@ -1,0 +1,5 @@
+/trainrgb/1222_1_1200_4800_4.png, /trainannot/1222_1_1200_4800_4.png, 0
+/trainrgb/1222_1_7200_3600_2.png, /trainannot/1222_1_7200_3600_2.png, 0
+/trainrgb/1339_1_1000_9800_1.33.png, /trainannot/1339_1_1000_9800_1.33.png, 0
+/trainrgb/1529_1_6000_3000_1.33.png, /trainannot/1529_1_6000_3000_1.33.png, 0
+/trainrgb/2204_1_18400_11800_1.33.png, /trainannot/2204_1_18400_11800_1.33.png, 0

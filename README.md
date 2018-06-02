@@ -7,8 +7,11 @@ Y-Net  identified correctly classified tissues that were not important for diagn
 
 [1] Beck, Andrew H., et al. "Systematic analysis of breast cancer morphology uncovers stromal features associated with survival." Science translational medicine 3.108 (2011): 108ra113-108ra113.
 
-
 ![Results](/images/results.png)
+
+Some segmentation results (Left: RGB WSI, Middle: Ground truth, Right: Predictions by Y-Net)
+
+![Results](/images/results.gif)
 
 ## Structure of this repository
 YNet is trained in two stages:

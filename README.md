@@ -5,6 +5,7 @@ This repository contains the source code for our paper, YNet, which is accepted 
 YNet is trained in two stages:
 * [stage1](/stage1/) This directory contains the source code for training the stage 1 in Y-Net. Stage 1 is nothing but a segmentation brach.
 * [stage2](/stage2/) This directory contains the source code for training the stage 2 in Y-Net. Stage 2 is jointly learning the segmentation and classification.
+* [seg_eval](/seg_eval/) This directory contains the source code for producing the segmentation masks. 
 
 ## Pre-requisite
 

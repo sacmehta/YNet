@@ -4,8 +4,8 @@ This repository contains the source code of segmentation branch of Y-Net.
 
 ## Structure of this repository
 This repository is organized as:
-* [data](/data/) This directory should contain the training and validation data.
-* [pretrained_models_st1](/pretrained_models_st1/) This directory contains the pre-trained models. We only provide the models for Y-Net with ESP as encoding blocks and PSP as decoding blocks.
+* [data](/stage1/data/) This directory should contain the training and validation data.
+* [pretrained_models_st1](/stage1/pretrained_models_st1/) This directory contains the pre-trained models. We only provide the models for Y-Net with ESP as encoding blocks and PSP as decoding blocks.
 * Python files - These files contain the source code that we used to train the data
 
 ## Getting Started

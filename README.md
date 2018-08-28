@@ -43,7 +43,7 @@ If Y-Net is useful for your research, then please cite our paper.
 @article{mehta2018espnet,
   title={ESPNet: Efficient Spatial Pyramid of Dilated Convolutions for Semantic Segmentation},
   author={Sachin Mehta, Mohammad Rastegari, Anat Caspi, Linda Shapiro, and Hannaneh Hajishirzi},
-  journal={arXiv preprint arXiv:1803.06815},
+  journal={European Conference in Computer Vision (ECCV)},
   year={2018}
 }
 ```

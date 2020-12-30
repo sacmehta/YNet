@@ -223,12 +223,12 @@ def trainValidateSegmentation(args):
     logFileLoc = args.savedir + os.sep + args.logFile
     if os.path.isfile(logFileLoc):
         logger = open(logFileLoc, 'a')
-        logger.write("Parameters: %s" % (str(total_paramters)))
+        logger.write("Parameters: %s" % (str(n_param)))
         logger.write("\n%s\t%s\t%s\t%s\t%s\t" % ('Epoch', 'Loss(Tr)', 'Loss(val)', 'mIOU (tr)', 'mIOU (val'))
         logger.flush()
     else:
         logger = open(logFileLoc, 'w')
-        logger.write("Parameters: %s" % (str(total_paramters)))
+        logger.write("Parameters: %s" % (str(n_param)))
         logger.write("\n%s\t%s\t%s\t%s\t%s\t" % ('Epoch', 'Loss(Tr)', 'Loss(val)', 'mIOU (tr)', 'mIOU (val'))
         logger.flush()
 
